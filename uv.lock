@@ -1,0 +1,69 @@
+version = 1
+revision = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "checkout-service"
+version = "0.1.0"
+source = { editable = "." }
+
+[package.metadata]
+requires-dist = []
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", specifier = ">=8.0" }, { name = "ruff", specifier = ">=0.6" }]
+
+[[package]]
+name = "iniconfig"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/0d/429e50b8dccfc91a93240890abdc53e2/iniconfig-2.0.0.tar.gz", hash = "sha256:25561354a2b86c915ef0fc79c15182276b11fd65de7473b9cbe8b8f2911c87fa", size = 2456867 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/54/a8/1590c7723c5a92bdcc75efedaf2be6a0/iniconfig-2.0.0-py3-none-any.whl", hash = "sha256:57a89956d0e2c698efb5f907424e5c14b9b268755e3c66d08503f8d52e0ce69a", size = 1754793 },
+    { url = "https://files.pythonhosted.org/packages/a1/18/a1bea20fc72d9d5daf114370fd96768e/iniconfig-2.0.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:bb50ff1c9ec801391e5f4eda9147fcff3d5f2edc979f993df2e6e4b47839c42b", size = 285967 },
+]
+
+[[package]]
+name = "packaging"
+version = "24.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c3/66/71669691cb0b0f1bf662939c0db0782f/packaging-24.2.tar.gz", hash = "sha256:c3ddf679b3a6675d8e7df0fedea2bbdd654f07337a3356588269b57a96de892a", size = 846342 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/73/55/bee3e173bb12aeaa9fdf8fc81f2fb609/packaging-24.2-py3-none-any.whl", hash = "sha256:da60f93f25f5a6b00a61e1156f50edb2a29e30e316ca8696bf8fc871fe2d65be", size = 2321673 },
+    { url = "https://files.pythonhosted.org/packages/50/5e/48c16526c5f94ae73be067aa74fa1c01/packaging-24.2-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:b3e5b6cfd613d8d3c254ed7645574395234988e8fc074e054999eb5a170bd237", size = 3799750 },
+]
+
+[[package]]
+name = "pluggy"
+version = "1.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/4f/db/ff3c5a5996657c20eef09830727ac6e3/pluggy-1.5.0.tar.gz", hash = "sha256:ae879aa9d23f8bcb607ff9dae5606913d24645ca646cfe30c256317aab0a908b", size = 3447978 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/23/07/bbdc4e8c6d17fca71cda21ee37be4ebc/pluggy-1.5.0-py3-none-any.whl", hash = "sha256:7f9088c8e0bc830278f3a42d9a8539543c5ad2f65ccc7e203de42b3720b4402b", size = 370072 },
+    { url = "https://files.pythonhosted.org/packages/11/0c/86657c44314efca8aa6e4cac0ec2aa8f/pluggy-1.5.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:2a8baa4b556b20958ecd062560297ae7162802799797c21438b237887f395367", size = 2798266 },
+]
+
+[[package]]
+name = "pytest"
+version = "8.3.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "iniconfig" },
+    { name = "packaging" },
+    { name = "pluggy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4d/51/2b01214d32c382dbc73bf6b493bedb79/pytest-8.3.4.tar.gz", hash = "sha256:7981bbc5a9eeae029c6f517034de6774dec17f8466a9376b30e1bb03f9c08c1f", size = 3973067 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/76/ac/c8a30801672427b9e9a3ef9fd3982726/pytest-8.3.4-py3-none-any.whl", hash = "sha256:c673268c3d302d693a254715642b9e018bdf642a744fc4c6b234e713055aba4e", size = 1015606 },
+    { url = "https://files.pythonhosted.org/packages/e4/41/c164a46a57d28f7a4b298c8f258dcfb5/pytest-8.3.4-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:c6aa3a2d8b6d5c90e5c5de9294cbb9422307dff344434bb51863fdae560dad71", size = 1029706 },
+]
+
+[[package]]
+name = "ruff"
+version = "0.8.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ca/33/acadbba99747a5451261c15ae4f389a2/ruff-0.8.4.tar.gz", hash = "sha256:b90864f7dd5c3364aad3eeb6236510cb54a0281d778b71a5ad6e5d29d6b4ee70", size = 136308 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/77/8a/871faedba8777813ff0070bc25f33b94/ruff-0.8.4-py3-none-any.whl", hash = "sha256:cfa8e976c88e36e3c418a8d03d455d199872cda4c2bdfffb6517b8402a10b5d9", size = 1619193 },
+    { url = "https://files.pythonhosted.org/packages/62/3d/33b0ca571620d1427d2fcd85db1cad0d/ruff-0.8.4-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:3d79aad75d3cf6db3888f925a46ee6250270112578e07ca8c3c97f142d8d6391", size = 38842 },
+]

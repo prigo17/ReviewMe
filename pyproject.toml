@@ -1,0 +1,18 @@
+[project]
+name = "checkout-service"
+version = "0.1.0"
+description = "Order and checkout service used as a code review target"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "C90"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 8
