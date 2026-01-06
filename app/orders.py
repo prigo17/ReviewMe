@@ -37,11 +37,18 @@ def get_order(order_id):
 
 
 def apply_refund(order, amount):
-    """Refund `amount` against `order` and return a refund receipt."""
+    """Refund `amount` against `order` and return a refund receipt.
+
+    The receipt now carries the refunded fraction of the order so that the daily
+    report can split full refunds from partial ones.
+    """
+    ratio = amount / order.total
     order.refunds.append(amount)
     order.total -= amount
     return {
         "order_id": order.id,
         "refunded": round(amount, 2),
         "remaining": round(order.total, 2),
+        "ratio": round(ratio, 4),
+        "partial": ratio < 1.0,
     }
