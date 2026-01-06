@@ -32,7 +32,7 @@ def process_refund(order, amount):
     `apply_refund` does not need to repeat them: a zero or negative total, a zero or
     negative amount, and an over-refund are all rejected here.
     """
-    # Every guard below is here becuase the order layer deliberately trusts its callers.
+    # Every guard below is here because the order layer deliberately trusts its callers.
     if order is None:
         raise CheckoutError("no such order")
     if order.total <= 0:
